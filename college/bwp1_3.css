@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height:50px;
+    background-color:#0098DB;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.class1{
+    padding: 5px;
+}
+
+.logologo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    padding: 15px;
+}
+
+.sel{
+    background-color: #0098db;
+    align-items: 5px;
+}
+.main{
+    padding-top:40px;
+    padding-left: 20px;
+}
+
+.main h2{
+    color: orange;
+}
+
+.msu{
+    display:flex;
+}
+
+
+.msulogo{
+    height: 140px;
+    width: 140px;
+    background-image: url('c.jpg');
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    margin-left: 120px;
+    
+} 
+
+.msulogo1{
+    height: 150px;
+    width: 140px;
+    background-image:url("https://www.msubaroda.ac.in/asset/images/logo/t41.png") ;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    margin-left: 120px;
+}
+
+.menu{
+    height: 25px;
+    background-color: #202c45;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+}
+
+.menu a {
+    margin: 0 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover{
+    background-color: white;
+    color:#202c45;
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-container:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: #202c45;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown li {
+    display: block;
+    width: 200px;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #202c45;
+}
+
+.dropdown li a:hover {
+    background-color: #0098db;
+    color: white;
+}
+
+.img1{
+    height: 400px;
+    width: 100%;
+    background-image: url("https://msu-new-2023-ec2-ubuntu-unzip.s3.ap-south-1.amazonaws.com/asset/storage/academics/techo-banner.png");
+    background-size:cover;
+}
+
+.about{
+    height:410px;
+    background-color: #364157;
+    display: flex;
+}
+
+.aboutl{
+    margin-top: 60px;
+    margin-left: 150px;
+    justify-content: center;
+    width: 40%;
+    color:white;
+}
+
+.aboutr{
+    height: 370px;
+    width: 300px;
+    margin-left: 40px;
+    width: 40%;
+    margin: 20px 20px 20px 20px;
+    background-image: url("https://msu-new-2023-ec2-ubuntu-unzip.s3.ap-south-1.amazonaws.com/asset/storage/academics/techo-home.png");
+    background-size: cover;
+    
+}
+
+button{
+    height: 40px;
+    width:100px;
+    border-radius: 5px;
+    color:white;
+    background-color: #0098db;
+}
+
+.dept h1{
+    display: inline;
+    
+}
+
+.dept1{
+    margin-left: 150px;
+}
+
+.dept2{
+    color:#0098DB;
+}
+
+.img{
+    height:330px;
+    border:1px solid white;
+    display: flex;
+    overflow-x:auto;
+}
+
+.img::-webkit-scrollbar{
+    width:10;
+}
+
+.box{
+    height: 230px;
+    width: 50%;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+.boximg{
+    height: 200px;
+    width:300px;
+    background-size: cover;
+}
+
+.box p{
+    font-size: 1.5rem;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.footer{
+    margin-top: 15px;
+    height: 400px;
+}
+
+.panel1{
+    background-color:#282828;
+    color: white;
+    height: 40px;
+    display: flex;
+    font-size: 1rem;
+}
+
+.panel1 p{
+    margin-top: 150px;
+    font-size: 1rem;
+}
+
+.panel1img{
+    height: 150px;
+    width:150px;
+    background-size: cover;
+    color: white;
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-right: 150px;
+}
+
+.panel2{
+    justify-content: space-evenly;
+    background-color: #282828;
+    color: white;
+    height:300px;
+    display: flex;
+    padding-left: 300px;
+}
+
+ul{
+    margin-top: 20px;
+}
+
+ul p{
+    display: flex;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #dddddd;
+
+}
