@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1,
+                   maximum-scale=1, minimum-scale=1, 
+                   width=device-width">
+    <!-- CSS file linked -->
+    <link rel="stylesheet" href="BlogStyle.css">
+    <title>Blog Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    
+</head>
+
+<body>
+    <header>
+        <h1 class="logo"  >CodeNexus</h1>
+        <nav>
+            <ul>
+                <li class="nav1"><a href="dashboard.html">Home</a></li>
+                <li class="nav1">
+                      <a href="#" id="createPostBtn">
+                          Create Post
+                      </a>
+                  </li>
+                <li class="nav1"><a href="about_us.html">About Us/ Contact </a></li>
+                <li class="nav1">
+                    <input type="text" id="searchBar" placeholder="Search Posts...">
+                </li>
+            </ul>
+            
+            
+        </nav>
+    </header>
+   
+    <main class="post-container">
+        <div id="createPostModal" class="modal">
+            <div class="modal-content">
+                
+                <span class="close" id="closeModal">&times;</span>
+                <h2>Create a New Post</h2>
+                <form id="postForm">
+                    <div class="upper">
+                        <div class="title">
+                            <label class="postheading" for="postTitle">
+                                  Title
+                              </label>
+                            <input type="text" class="postTitle"
+                             id="postTitle" name="postTitle"
+                              autocomplete="off" required>
+                        </div>
+                        <div class="category1">
+                            <label class="postheading" for="postCategory">
+                                  Category
+                              </label>
+                            <input type="text" class="postCategory"
+                             id="postCategory" name="postCategory" 
+                             autocomplete="off" required>
+                        </div>
+                    </div>
+
+                    <label class="postheading" for="postDescription">
+                          Description
+                      </label>
+                    <textarea class="postDescription" id="postDescription" 
+                               name="postDescription" autocomplete="off" 
+                               required>
+                      </textarea>
+
+                    <button type="submit" id="postSubmitBtn" 
+                    class="postSubmitBtn">Post</button>
+                </form>
+            </div>
+        </div>
+    
+        <!-- Detail Modal -->
+        <div id="postDetailModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeDetailModal">
+                      &times;
+                  </span>
+                <h1 id="detailTitle"></h1>
+                <span id="detailDate"></span>
+                <p id="detailDescription"></p>
+            </div>
+        </div>
+
+        <div id="postCreatedMessage" class="post-message">
+            Post created successfully!
+          </div>
+        
+    </main>
+  
+
+       
+    
+   <!-- Comments section positioned to the right -->
+   <!-- <div class="comments-section">
+    <h3>Comments</h3>
+    <div id="commentsList">
+       
+    </div>
+    <textarea id="commentInput" placeholder="Add a comment..."></textarea>
+    <button id="addCommentBtn">Add Comment</button>
+</div> -->
+<div class="comments-section">
+    <h3>Comments</h3>
+    <div id="commentsList">
+        <!-- JavaScript will populate comments here -->
+    </div>
+    <textarea id="commentInput" placeholder="Add a comment..."></textarea>
+    <button id="addCommentBtn">Add Comment</button>
+</div>
+
+    <footer>
+        <p>&copy; 2023 GeeksForGeeks</p>
+    </footer>
+
+    <!-- JavaScript file linked -->
+    <script src="BlogScript.js"></script>
+</body>
+
+</html>
